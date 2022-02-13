@@ -9,9 +9,14 @@ jobs:
       - name: Run a one-line script
         run: echo Hello,world!
         
-  calling-called:
-    #needs: calling-called2
-    uses: Thirthavathi-NR/called/.github/workflows/main.yml@main
-  
-  calling-called2:  
+  calling-called-workflow1:
+    #needs: calling-called2=worflow2
+    uses: Thirthavathi-NR/called/.github/workflows/workflow1.yml@main
+       
+  calling-called-workflow2:
     uses: Thirthavathi-NR/called/.github/workflows/workflow2.yml@main
+    
+  calling-called-workflow3:
+    uses: Thirthavathi-NR/caller/.github/workflows/workflow3.yml@main
+  
+
