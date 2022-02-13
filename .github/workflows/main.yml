@@ -11,3 +11,6 @@ jobs:
         
   calling-called:
     uses: Thirthavathi-NR/called/.github/workflows/main.yml@main
+  
+  calling-called2:  
+    uses: Thirthavathi-NR/called/.github/workflows/workflow2.yml@main
