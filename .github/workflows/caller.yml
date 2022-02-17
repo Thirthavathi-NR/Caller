@@ -10,7 +10,6 @@ jobs:
         run: echo Hello,world!
         
   calling-called-workflow1:
-    #needs: do-it
     uses: Thirthavathi-NR/called/.github/workflows/workflow1.yml@main
        
   calling-called-workflow2:
